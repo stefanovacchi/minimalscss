@@ -1,0 +1,15 @@
+{
+    "name": "minimalscss",
+    "version": "1.0.0",
+    "scripts": {
+        "css": "node-sass main.scss -o dist",
+        "css:watch": "npm run css && node-sass main.scss -wo dist",
+        "start": "npm run css && npm run open",
+        "open": "concurrently \"http-server -a localhost -p 3000\" \"open http://localhost:3000\""
+    },
+    "devDependencies": {
+        "concurrently": "^5.0.0",
+        "http-server": "^0.11.1",
+        "node-sass": "^4.12.0"
+    }
+}
