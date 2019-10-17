@@ -1,6 +1,6 @@
 {
     "name": "minimalscss",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "scripts": {
         "css": "node-sass main.scss -o dist",
         "css:watch": "npm run css && node-sass main.scss -wo dist",
